@@ -27,6 +27,7 @@ Mañana: Día 2. No saltes semanas.
 | `vocabulario-tech.md` | Código, reuniones, interviews |
 | `bitacora.md` | Tu registro diario |
 | `cheat-sheet-entrevistas.md` | Respuestas cortas para entrevistas |
+| `ilustraciones-referenciadas.md` | Guía de imágenes seguras + formato de atribución |
 
 ## Nivel
 
@@ -44,5 +45,13 @@ Mañana: Día 2. No saltes semanas.
 - Repasa `frases-clave.md` una vez por semana.
 - Graba 2 min: *What I did this week as a developer.*
 - En standups: una frase en inglés al día desde `vocabulario-tech.md`.
+
+## Material visual (ruta Data)
+
+Si vas a usar imágenes para hacer el curso más familiar para alumnos de Oracle Academy Data, usa la guía:
+
+- `ilustraciones-referenciadas.md`
+
+Incluye fuentes recomendadas, plantilla de referencia y checklist legal simple.
 
 **Carpeta:** `Documents/TripleTen/curso-ingles`
