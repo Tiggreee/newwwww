@@ -14,14 +14,14 @@
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="./assets/index-eCm7xJrI.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DNNy4bET.css">
+    <script type="module" crossorigin src="./assets/index-Brktj8jD.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-dbU4UDob.css">
   </head>
   <body>
     <div class="bg-shape bg-shape-a" aria-hidden="true"></div>
     <div class="bg-shape bg-shape-b" aria-hidden="true"></div>
 
-    <header class="hero">
+    <header class="hero reveal" data-reveal>
       <p class="eyebrow">Ruta Data + English</p>
       <h1>Aprende ingles desde cero para analisis de datos, sin humo</h1>
       <p class="hero-copy">
@@ -34,7 +34,7 @@
       </div>
     </header>
 
-    <section class="onboarding" id="registro">
+    <section class="onboarding reveal" id="registro" data-reveal>
       <div class="onboarding-copy">
         <p class="eyebrow">Onboarding</p>
         <h2>1 minuto para entrar, luego empiezas la ruta real</h2>
@@ -74,7 +74,7 @@
       </div>
     </section>
 
-    <main class="layout">
+    <main class="layout reveal" data-reveal>
       <aside class="sidebar" aria-label="Navegacion de contenido">
         <div class="sidebar-head">
           <h2>Contenido</h2>
@@ -98,7 +98,7 @@
       </section>
     </main>
 
-    <section class="interactive" aria-label="Data route interactive" id="challenge-mode">
+    <section class="interactive reveal" aria-label="Data route interactive" id="challenge-mode" data-reveal>
       <div class="interactive-head">
         <p class="eyebrow">Laboratorio interactivo</p>
         <h2>Aprende ingles para Data Analyst en modo practico</h2>
@@ -131,6 +131,11 @@
       </div>
 
       <div class="quiz-panel" id="quiz-panel">
+        <div class="quiz-lines" aria-hidden="true">
+          <span class="q-line q-line-a"></span>
+          <span class="q-line q-line-b"></span>
+          <span class="q-line q-line-c"></span>
+        </div>
         <h3>Challenge mode - 10 de 10</h3>
         <p class="quiz-score">Progreso: <strong id="quiz-progress">0/10</strong></p>
         <p id="quiz-level" class="quiz-level">Nivel 1</p>
@@ -154,7 +159,7 @@
       </div>
     </section>
 
-    <section class="backend-panel" aria-label="Backend analytics panel">
+    <section class="backend-panel reveal" aria-label="Backend analytics panel" data-reveal>
       <div class="backend-head">
         <p class="eyebrow">Full Stack Live</p>
         <h2>Panel de estadisticas en tiempo real</h2>
