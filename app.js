@@ -173,6 +173,7 @@ const sponsorCta = document.querySelector("#sponsor-cta");
 const rewardModal = document.querySelector("#reward-modal");
 const rewardTimer = document.querySelector("#reward-timer");
 const bookLink = document.querySelector("#book-link");
+const revealTargets = document.querySelectorAll("[data-reveal]");
 
 const kpiLearners = document.querySelector("#kpi-learners");
 const kpiActive = document.querySelector("#kpi-active");
@@ -441,6 +442,33 @@ function handleQuizNext() {
   renderQuiz();
 }
 
+function setupRevealAnimations() {
+  if (!revealTargets.length) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          if (entry.target.id === "challenge-mode") {
+            const quizPanel = document.querySelector("#quiz-panel");
+            if (quizPanel) {
+              quizPanel.classList.add("quiz-live");
+            }
+          }
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.2,
+      rootMargin: "0px 0px -40px 0px"
+    }
+  );
+
+  revealTargets.forEach((target) => observer.observe(target));
+}
+
 async function loadBackendOverview() {
   const overview = await fetchJson("/api/stats/overview");
   if (!overview) {
@@ -526,3 +554,4 @@ renderQuiz();
 loadBackendOverview();
 loadLeaderboard();
 loadCaseOfDay();
+setupRevealAnimations();
