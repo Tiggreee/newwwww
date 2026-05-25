@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">SQL programming visual</title>
+  <desc id="desc">Code editor with SQL query and result table.</desc>
+  <rect width="800" height="500" fill="#fff7ed"/>
+  <rect x="90" y="60" width="620" height="360" rx="20" fill="#0f172a"/>
+  <rect x="120" y="110" width="560" height="150" rx="12" fill="#1e293b"/>
+  <text x="145" y="145" font-family="Courier New, monospace" font-size="20" fill="#f8fafc">SELECT user_name, score</text>
+  <text x="145" y="175" font-family="Courier New, monospace" font-size="20" fill="#f8fafc">FROM leaderboard</text>
+  <text x="145" y="205" font-family="Courier New, monospace" font-size="20" fill="#f8fafc">WHERE score &gt; 80</text>
+  <text x="145" y="235" font-family="Courier New, monospace" font-size="20" fill="#f8fafc">ORDER BY score DESC;</text>
+  <rect x="120" y="280" width="560" height="110" rx="12" fill="#f8fafc"/>
+  <line x1="120" y1="317" x2="680" y2="317" stroke="#cbd5e1" stroke-width="2"/>
+  <line x1="300" y1="280" x2="300" y2="390" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="145" y="305" font-family="Arial, sans-serif" font-size="18" fill="#0f172a">user_name</text>
+  <text x="335" y="305" font-family="Arial, sans-serif" font-size="18" fill="#0f172a">score</text>
+  <text x="145" y="345" font-family="Arial, sans-serif" font-size="18" fill="#334155">Ana</text>
+  <text x="335" y="345" font-family="Arial, sans-serif" font-size="18" fill="#334155">92</text>
+  <text x="145" y="375" font-family="Arial, sans-serif" font-size="18" fill="#334155">Leo</text>
+  <text x="335" y="375" font-family="Arial, sans-serif" font-size="18" fill="#334155">88</text>
+  <rect x="275" y="435" width="250" height="40" rx="20" fill="#f59e0b"/>
+  <text x="338" y="462" font-family="Arial, sans-serif" font-size="20" fill="#ffffff">Practice SQL</text>
+</svg>

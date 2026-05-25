@@ -1,78 +1,60 @@
-# Frases clave — banco de práctica
+# Frases clave - banco de practica
 
-Repasa en voz alta. No traduzcas palabra por palabra; copia el ritmo.
-
----
-
-## Semana 1 — Presente y supervivencia
-
-- Hi, I'm Victor. Nice to meet you.
-- I'm learning web development at TripleTen.
-- I'm a beginner, but I'm practicing every day.
-- Sorry, could you repeat that more slowly?
-- I spend most of my day studying and coding.
-- I'm working on a project for my bootcamp.
-- The page isn't loading. I'll refresh it.
-- I'm stuck on this exercise. Can you help me?
-- Thanks — that makes sense now.
-- In my opinion, consistency matters more than speed.
+Repasa en voz alta. Copia ritmo y estructura.
 
 ---
 
-## Semana 2 — Pasado y proyectos
+## Semana 1 - Base
 
-- Yesterday I studied for about three hours.
-- I didn't understand at first, but I asked and it helped.
-- Last week I started a new module.
-- I had trouble with JavaScript, but I made progress.
-- I got an error, googled it, and fixed one line.
-- It took me an hour, but I learned why it failed.
-- Tomorrow I'm going to review my notes.
-- My goal this week is to finish [task].
-
----
-
-## Semana 3 — Equipo y reuniones
-
-- Yesterday I worked on [task]. Today I'm going to [task].
-- I'm blocked because [reason].
-- Hey — quick question when you have a minute.
-- I'll take a look and reply soon.
-- Could you review my pull request when you can?
-- Good catch — I'll update it.
-- I need a bit more time on this.
-- Does that explanation make sense?
+- I'm learning data analysis and practical SQL.
+- I'm improving my English for analytics work.
+- Could you repeat that more slowly?
+- Can you clarify the metric and time range?
+- I want to confirm before I query the data.
+- This table has one row per transaction.
+- The data looks incomplete in this column.
+- We should validate before sharing results.
 
 ---
 
-## Semana 4 — Entrevistas
+## Semana 2 - Proceso y resultados
 
-- I'm a bootcamp student focusing on web development.
-- I'm looking for a role where I can learn from a team.
-- My strength is that I don't give up when something is hard.
-- One area I'm working on is [topic], and I'm practicing every day.
-- I'll walk you through a project I built recently.
-- I don't have experience with that yet, but I'm eager to learn.
-- That's a good question — let me think for a second.
-- What are the next steps in the process?
-
----
-
-## Conectores útiles (pega conversaciones)
-
-| English | Cuándo usarlo |
-|---------|----------------|
-| Actually, … | Matiz / corrección suave |
-| To be honest, … | Opinión sincera |
-| By the way, … | Cambio de tema |
-| On the other hand, … | Contrapunto |
-| So, … | Resumen / siguiente paso |
-| Anyway, … | Volver al punto |
+- Yesterday I cleaned the dataset.
+- I removed duplicates and checked null values.
+- I grouped results by channel.
+- The main insight is that retention dropped in week three.
+- I documented the issue and fixed it.
+- Tomorrow I'm going to validate this metric.
+- My goal this week is a clear summary.
 
 ---
 
-## Si te bloqueas (comprar 3 segundos)
+## Semana 3 - Colaboracion
+
+- Quick question when you have a minute.
+- Thanks for the context.
+- I agree with your suggestion.
+- Can we clarify this requirement?
+- I'll send an updated version today.
+- This is my top priority right now.
+- The next step is improving data quality.
+
+---
+
+## Semana 4 - Entrevista
+
+- I'm training as a junior data analyst.
+- I focus on SQL, cleaning, and reporting.
+- My strength is structured thinking.
+- One thing I'm improving is storytelling with data.
+- I'll walk you through a recent analysis.
+- The key finding was a 12% increase in retention.
+- Thank you for your time. I'm very interested in this role.
+
+---
+
+## Si te bloqueas (3 segundos)
 
 - Let me rephrase that.
-- What I mean is…
-- How do I say… in English? *(está bien preguntar)*
+- What I mean is...
+- Could you clarify your question?

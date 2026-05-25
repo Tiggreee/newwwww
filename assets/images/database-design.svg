@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Database design visual</title>
+  <desc id="desc">Entity relationship layout with linked cards and crow foot style lines.</desc>
+  <rect width="800" height="500" fill="#edf7f4"/>
+  <rect x="90" y="90" width="220" height="120" rx="14" fill="#ffffff" stroke="#94a3b8" stroke-width="3"/>
+  <rect x="490" y="90" width="220" height="120" rx="14" fill="#ffffff" stroke="#94a3b8" stroke-width="3"/>
+  <rect x="290" y="290" width="220" height="120" rx="14" fill="#ffffff" stroke="#94a3b8" stroke-width="3"/>
+  <text x="150" y="130" font-family="Arial, sans-serif" font-size="24" fill="#1e293b">users</text>
+  <text x="550" y="130" font-family="Arial, sans-serif" font-size="24" fill="#1e293b">courses</text>
+  <text x="330" y="330" font-family="Arial, sans-serif" font-size="24" fill="#1e293b">enrollments</text>
+  <line x1="310" y1="150" x2="490" y2="150" stroke="#0f766e" stroke-width="4"/>
+  <line x1="200" y1="210" x2="340" y2="290" stroke="#0f766e" stroke-width="4"/>
+  <line x1="600" y1="210" x2="460" y2="290" stroke="#0f766e" stroke-width="4"/>
+  <text x="360" y="143" font-family="Arial, sans-serif" font-size="22" fill="#0f766e">M:N</text>
+  <text x="220" y="265" font-family="Arial, sans-serif" font-size="18" fill="#334155">1</text>
+  <text x="575" y="265" font-family="Arial, sans-serif" font-size="18" fill="#334155">1</text>
+  <text x="355" y="268" font-family="Arial, sans-serif" font-size="18" fill="#334155">N</text>
+  <rect x="255" y="25" width="290" height="50" rx="25" fill="#dd6b20"/>
+  <text x="312" y="57" font-family="Arial, sans-serif" font-size="24" fill="#fff">Design your schema</text>
+</svg>

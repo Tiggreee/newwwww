@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Database foundations visual</title>
+  <desc id="desc">Student learning database basics on a laptop with data blocks.</desc>
+  <rect width="800" height="500" fill="#f8efe0"/>
+  <circle cx="120" cy="90" r="55" fill="#f59e0b" opacity="0.25"/>
+  <circle cx="700" cy="420" r="70" fill="#0f766e" opacity="0.2"/>
+  <rect x="120" y="120" width="560" height="320" rx="22" fill="#fffdf8" stroke="#e9d8b4" stroke-width="4"/>
+  <rect x="180" y="190" width="440" height="180" rx="12" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <rect x="215" y="220" width="130" height="110" rx="10" fill="#fde68a"/>
+  <rect x="355" y="220" width="130" height="110" rx="10" fill="#bfdbfe"/>
+  <rect x="495" y="220" width="90" height="110" rx="10" fill="#bbf7d0"/>
+  <text x="230" y="255" font-family="Arial, sans-serif" font-size="20" fill="#334155">Row</text>
+  <text x="230" y="285" font-family="Arial, sans-serif" font-size="20" fill="#334155">Col</text>
+  <text x="370" y="255" font-family="Arial, sans-serif" font-size="20" fill="#334155">Table</text>
+  <text x="512" y="255" font-family="Arial, sans-serif" font-size="20" fill="#334155">Key</text>
+  <rect x="300" y="80" width="200" height="46" rx="23" fill="#0f766e"/>
+  <text x="333" y="110" font-family="Arial, sans-serif" font-size="20" fill="#ffffff">Foundations</text>
+</svg>

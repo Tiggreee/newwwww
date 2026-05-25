@@ -1,78 +1,65 @@
-# Vocabulario tech — lo que más vas a oír
+# Vocabulario Data Analyst - lo que mas vas a usar
 
-Aprende la **frase**, no solo la palabra.
-
----
-
-## 1. Código y repo
-
-| English | Ejemplo en frase |
-|---------|------------------|
-| commit | I committed my changes. |
-| push | I'll push to GitHub tonight. |
-| branch | I'm on a new branch for this feature. |
-| merge | We merged the PR yesterday. |
-| clone | Clone the repo and run npm install. |
-| deploy | We deploy on Fridays. |
-| environment variable | Set the API key in an environment variable. |
+Aprende la frase, no solo la palabra.
 
 ---
 
-## 2. Errores y debugging
+## 1. Datos y estructura
 
 | English | Ejemplo |
 |---------|---------|
-| bug | There's a bug in the form. |
-| error message | I got a 404 error message. |
-| stack trace | Check the stack trace in the console. |
-| reproduce | I can't reproduce the bug on my machine. |
-| fix | I fixed it by updating the import. |
-| workaround | It's a temporary workaround. |
-| root cause | We found the root cause. |
+| dataset | This dataset has one row per order. |
+| field | This field stores the customer segment. |
+| row | Each row represents one transaction. |
+| null value | We have null values in this column. |
+| primary key | order_id is the primary key. |
+| foreign key | customer_id is a foreign key. |
 
 ---
 
-## 3. Frontend común
+## 2. SQL y analisis
 
 | English | Ejemplo |
 |---------|---------|
-| layout | The layout breaks on mobile. |
-| responsive | The site isn't responsive yet. |
-| component | I split it into smaller components. |
-| props | Pass the data as props. |
-| state | The state updates when the user clicks. |
-| render | It doesn't render anything. |
-| fetch data | We fetch data from an API. |
+| filter | I filtered the data by region. |
+| join | I joined orders with customers. |
+| aggregate | I aggregated revenue by month. |
+| query | I wrote a query to validate churn. |
+| metric | We need to align on this metric definition. |
+| segment | The strongest segment is returning users. |
 
 ---
 
-## 4. Reuniones
+## 3. Calidad de datos
 
 | English | Ejemplo |
 |---------|---------|
-| standup | Standup is at 10 a.m. |
-| blocker | My blocker is the API key. |
-| sync | Let's sync after lunch. |
-| deadline | The deadline is Wednesday. |
-| scope | That's out of scope for this sprint. |
-| MVP | Let's ship an MVP first. |
+| duplicate | I removed duplicate rows. |
+| missing data | We have missing data in age. |
+| outlier | That value looks like an outlier. |
+| validation | I ran a validation check before publishing. |
+| consistency | We need consistency across sources. |
+| source of truth | This table is our source of truth. |
 
 ---
 
-## 5. Una frase al día (elige una)
+## 4. Reportes y reuniones
 
-Lunes: *I'm going to refactor this component.*  
-Martes: *The tests are failing on CI.*  
-Miércoles: *I'll open a PR after dinner.*  
-Jueves: *Can you pair with me for twenty minutes?*  
-Viernes: *I need to read the docs for this library.*
+| English | Ejemplo |
+|---------|---------|
+| insight | The key insight is retention growth. |
+| trend | The trend is stable after week four. |
+| recommendation | My recommendation is to improve onboarding. |
+| stakeholder | I shared the summary with stakeholders. |
+| scope | This request is outside the current scope. |
+| deadline | The deadline is Friday at 5 PM. |
 
 ---
 
-## Falsos amigos / cuidado
+## 5. Frase diaria
 
-| No digas así | Mejor |
-|--------------|-------|
-| "open the page" (a veces) | load / refresh the page |
-| "realize a project" | **build** or **complete** a project |
-| "actually" en cada frase | solo cuando matizas (*Actually, I meant…*) |
+Lunes: The data shows a clear trend in Q2.
+Martes: We should validate this metric before publishing.
+Miercoles: I can share a short summary after lunch.
+Jueves: Could you clarify the business definition?
+Viernes: The next step is testing this hypothesis.

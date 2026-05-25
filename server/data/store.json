@@ -1,0 +1,148 @@
+{
+  "learners": [
+    {
+      "id": "ana-lopez",
+      "name": "Ana Lopez",
+      "level": "A2",
+      "track": "data-analyst",
+      "lastActive": "2026-05-24T19:20:00.000Z",
+      "streak": 6
+    },
+    {
+      "id": "leo-garcia",
+      "name": "Leo Garcia",
+      "level": "A2",
+      "track": "data-analyst",
+      "lastActive": "2026-05-24T18:10:00.000Z",
+      "streak": 4
+    },
+    {
+      "id": "maria-reyes",
+      "name": "Maria Reyes",
+      "level": "B1",
+      "track": "data-analyst",
+      "lastActive": "2026-05-23T21:00:00.000Z",
+      "streak": 9
+    },
+    {
+      "id": "victor-demo",
+      "name": "Victor Demo",
+      "level": "A2",
+      "track": "data-analyst",
+      "streak": 1,
+      "lastActive": "2026-05-25T05:25:43.254Z"
+    }
+  ],
+  "attempts": [
+    {
+      "learnerId": "ana-lopez",
+      "module": "foundations",
+      "score": 86,
+      "speakingScore": 80,
+      "timestamp": "2026-05-24T19:21:00.000Z"
+    },
+    {
+      "learnerId": "leo-garcia",
+      "module": "sql",
+      "score": 73,
+      "speakingScore": 70,
+      "timestamp": "2026-05-24T18:12:00.000Z"
+    },
+    {
+      "learnerId": "maria-reyes",
+      "module": "storytelling",
+      "score": 92,
+      "speakingScore": 89,
+      "timestamp": "2026-05-23T21:05:00.000Z"
+    },
+    {
+      "learnerId": "victor-demo",
+      "module": "sql",
+      "score": 87,
+      "speakingScore": 82,
+      "timestamp": "2026-05-25T05:25:43.254Z"
+    }
+  ],
+  "completions": [
+    {
+      "learnerId": "ana-lopez",
+      "module": "foundations",
+      "completedAt": "2026-05-23T19:10:00.000Z"
+    },
+    {
+      "learnerId": "ana-lopez",
+      "module": "design",
+      "completedAt": "2026-05-24T19:15:00.000Z"
+    },
+    {
+      "learnerId": "leo-garcia",
+      "module": "foundations",
+      "completedAt": "2026-05-22T18:01:00.000Z"
+    },
+    {
+      "learnerId": "maria-reyes",
+      "module": "foundations",
+      "completedAt": "2026-05-20T20:01:00.000Z"
+    },
+    {
+      "learnerId": "maria-reyes",
+      "module": "design",
+      "completedAt": "2026-05-21T20:10:00.000Z"
+    },
+    {
+      "learnerId": "maria-reyes",
+      "module": "sql",
+      "completedAt": "2026-05-23T20:20:00.000Z"
+    }
+  ],
+  "events": [
+    {
+      "type": "lesson-opened",
+      "module": "foundations",
+      "timestamp": "2026-05-24T19:00:00.000Z"
+    },
+    {
+      "type": "quiz-correct",
+      "module": "design",
+      "timestamp": "2026-05-24T19:05:00.000Z"
+    },
+    {
+      "type": "lesson-opened",
+      "module": "sql",
+      "timestamp": "2026-05-24T19:08:00.000Z"
+    },
+    {
+      "type": "audio-practice",
+      "module": "storytelling",
+      "timestamp": "2026-05-23T21:06:00.000Z"
+    },
+    {
+      "type": "quiz-correct",
+      "module": "sql",
+      "timestamp": "2026-05-25T05:25:43.254Z"
+    }
+  ],
+  "cases": [
+    {
+      "id": "case-growth-anomaly",
+      "title": "Case of the Day: The Silent Churn",
+      "hook": "Revenue looks stable, but returning users are quietly dropping in one segment.",
+      "task": "Explain in English what metric you would check first and why.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "case-broken-funnel",
+      "title": "Case of the Day: Funnel Leak",
+      "hook": "Traffic increased 18%, but conversions stayed flat.",
+      "task": "Describe one SQL query you would run to isolate where the funnel is leaking.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "case-bias-alert",
+      "title": "Case of the Day: Segment Bias",
+      "hook": "A campaign appears successful only when one region is excluded.",
+      "task": "State in English how you would validate if the conclusion is biased.",
+      "difficulty": "medium"
+    }
+  ]
+}

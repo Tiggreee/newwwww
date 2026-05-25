@@ -1,123 +1,65 @@
-# Semana 2 — Pasado simple y tu historia
+# Semana 2 - Contar proceso y resultados
 
-**Meta:** Contar qué hiciste ayer / la semana pasada (proyectos, errores, logros).
-
----
-
-## Día 1 — Ayer (15–20 min)
-
-### Decir esto
-
-1. Yesterday I studied for about three hours.
-2. I finished a small task on my project.
-3. I didn't understand the instructions at first.
-4. I asked a question in the chat and it helped.
-5. I went to bed late because I was debugging.
-
-### Mini regla
-
-**Pasado regular:** verbo + *-ed* (*worked, finished*).  
-**Irregulares comunes:** *went, did, had, said, got, made, thought.*
-
-### Práctica
-
-5 frases sobre ayer (una negativa: *I didn't…*).
+Meta: explicar que hiciste, que encontraste y que sigue.
 
 ---
 
-## Día 2 — Fin de semana / semana pasada (15–20 min)
+## Dia 1 - Lo que hice ayer
 
-### Decir esto
+1. Yesterday I cleaned the dataset.
+2. I removed duplicates and checked null values.
+3. I wrote two SQL queries for validation.
+4. I found one issue in the date format.
+5. I documented the fix.
 
-1. Last week I started a new module.
-2. I had trouble with JavaScript arrays.
-3. I watched a tutorial and tried again.
-4. I didn't finish everything, but I made progress.
-5. This week I want to focus on [topic].
-
-### Palabras del día
-
-| English | Español |
-|---------|---------|
-| module | módulo |
-| trouble with | problemas con |
-| tutorial | tutorial |
-| made progress | avancé |
-
-### Práctica
-
-Cuenta tu semana pasada en 6 frases. Usa *last week* al menos 2 veces.
+Mini regla: pasado simple para acciones cerradas.
 
 ---
 
-## Día 3 — Proyecto del bootcamp (15–20 min)
+## Dia 2 - Progreso semanal
 
-### Decir esto
-
-1. I'm building a [type] app for my portfolio.
-2. I designed the layout first, then I coded the logic.
-3. I broke something yesterday, but I fixed it.
-4. The hardest part was [X].
-5. I'm proud of what I learned, not just the result.
-
-### Práctica
-
-Explica tu proyecto actual como si hablaras en standup (5 frases, pasado + presente).
+1. Last week I analyzed customer retention.
+2. I compared monthly cohorts.
+3. I noticed a drop in week three.
+4. I shared a short summary with the team.
+5. This week I will test possible causes.
 
 ---
 
-## Día 4 — Errores y debugging (15–20 min)
+## Dia 3 - Del problema al hallazgo
 
-### Decir esto
+1. The question was about churn increase.
+2. I filtered users by signup month.
+3. I grouped results by acquisition channel.
+4. Paid social had the highest churn rate.
+5. We should review onboarding quality.
 
-1. I got an error message I didn't recognize.
-2. I googled the error and found a similar issue.
-3. I changed one line and it started working.
-4. It took me an hour, but I learned why it failed.
-5. Next time I'll read the docs before guessing.
-
-### Práctica
-
-Historia real o inventada: *problem → what I tried → solution* (6 frases).
+Practica: problema -> metodo -> hallazgo -> accion (4 frases).
 
 ---
 
-## Día 5 — Planes cercanos (15–20 min)
+## Dia 4 - Errores y correcciones
 
-### Decir esto
-
-1. Tomorrow I'm going to review my notes.
-2. I'm planning to push my code to GitHub tonight.
-3. I might pair with a classmate on Friday.
-4. I won't have time on Sunday — I need to rest.
-5. My goal this week is to finish [task].
-
-### Mini regla
-
-**Futuro cercano:** *I'm going to…* / *I'll…* (decisión o promesa).
-
-### Práctica
-
-Plan de 3 días para estudiar (5 frases).
+1. I got an error in my SQL syntax.
+2. I checked the query and fixed the join condition.
+3. Then I reran the analysis.
+4. The results were consistent.
+5. I added comments to avoid the same mistake.
 
 ---
 
-## Día 6 — Repaso (25–30 min)
+## Dia 5 - Plan cercano
 
-1. `frases-clave.md` → sección Semana 2.
-2. Escribe 8 frases en pasado sobre tu último mes de estudio.
-3. Léelas en voz alta. Corrige solo verbos obvios.
-
----
-
-## Día 7 — Descanso activo (10 min)
-
-Escribe 3 frases en inglés en `bitacora.md` sobre cómo te sentiste esta semana estudiando.
+1. Tomorrow I'm going to validate the metric definition.
+2. I'll update the dashboard labels.
+3. I might add a segment by region.
+4. I won't publish until the numbers are checked.
+5. My goal is a clear executive summary.
 
 ---
 
 ## Checklist semana 2
 
-- [ ] Puedo decir 5 cosas que hice la semana pasada sin preparar 10 min
-- [ ] Usé *I got an error* o similar en voz alta
-- [ ] Bitácora actualizada
+- [ ] Explico acciones en pasado
+- [ ] Comunico un hallazgo con numero
+- [ ] Cierro con una recomendacion clara

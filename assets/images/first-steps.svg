@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">First steps visual</title>
+  <desc id="desc">A learner with roadmap steps from basics to SQL challenges.</desc>
+  <rect width="800" height="500" fill="#f0f9ff"/>
+  <path d="M90 390 C180 280, 260 420, 340 300 C420 190, 500 340, 580 240 C640 170, 700 220, 740 140" fill="none" stroke="#0ea5e9" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="90" cy="390" r="18" fill="#0369a1"/>
+  <circle cx="340" cy="300" r="18" fill="#0369a1"/>
+  <circle cx="580" cy="240" r="18" fill="#0369a1"/>
+  <circle cx="740" cy="140" r="18" fill="#0369a1"/>
+  <rect x="70" y="70" width="220" height="90" rx="14" fill="#ffffff" stroke="#93c5fd"/>
+  <text x="95" y="122" font-family="Arial, sans-serif" font-size="24" fill="#0f172a">Step 1: Basics</text>
+  <rect x="300" y="70" width="220" height="90" rx="14" fill="#ffffff" stroke="#93c5fd"/>
+  <text x="318" y="122" font-family="Arial, sans-serif" font-size="24" fill="#0f172a">Step 2: Design</text>
+  <rect x="530" y="70" width="220" height="90" rx="14" fill="#ffffff" stroke="#93c5fd"/>
+  <text x="548" y="122" font-family="Arial, sans-serif" font-size="24" fill="#0f172a">Step 3: SQL</text>
+</svg>
