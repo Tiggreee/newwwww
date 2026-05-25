@@ -120,6 +120,11 @@
       "type": "quiz-correct",
       "module": "sql",
       "timestamp": "2026-05-25T05:25:43.254Z"
+    },
+    {
+      "type": "challenge-completed",
+      "module": "storytelling",
+      "timestamp": "2026-05-25T06:18:04.904Z"
     }
   ],
   "cases": [
@@ -143,6 +148,15 @@
       "hook": "A campaign appears successful only when one region is excluded.",
       "task": "State in English how you would validate if the conclusion is biased.",
       "difficulty": "medium"
+    }
+  ],
+  "users": [
+    {
+      "id": "user-1779689884522",
+      "name": "Victor QA",
+      "email": "victor.qa@example.com",
+      "password": "1234",
+      "createdAt": "2026-05-25T06:18:04.522Z"
     }
   ]
 }

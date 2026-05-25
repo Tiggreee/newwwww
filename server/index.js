@@ -23,6 +23,16 @@ function writeStore(store) {
   fs.writeFileSync(dataPath, JSON.stringify(store, null, 2));
 }
 
+function normalizeEmail(email = "") {
+  return String(email).trim().toLowerCase();
+}
+
+function ensureUsers(store) {
+  if (!Array.isArray(store.users)) {
+    store.users = [];
+  }
+}
+
 function toDateOnly(iso) {
   return new Date(iso).toISOString().slice(0, 10);
 }
@@ -165,6 +175,93 @@ app.get("/api/case-of-day", (_req, res) => {
   const store = readStore();
   const dayIndex = new Date().getUTCDate() % store.cases.length;
   res.json(store.cases[dayIndex]);
+});
+
+app.post("/api/auth/register", (req, res) => {
+  const { name, email, password } = req.body || {};
+  if (!name || !email || !password) {
+    return res.status(400).json({ error: "name, email and password are required" });
+  }
+
+  const store = readStore();
+  ensureUsers(store);
+  const normalizedEmail = normalizeEmail(email);
+
+  if (store.users.some((user) => normalizeEmail(user.email) === normalizedEmail)) {
+    return res.status(409).json({ error: "email already exists" });
+  }
+
+  const user = {
+    id: `user-${Date.now()}`,
+    name: String(name).trim(),
+    email: normalizedEmail,
+    password: String(password),
+    createdAt: new Date().toISOString()
+  };
+
+  store.users.push(user);
+  writeStore(store);
+
+  return res.status(201).json({
+    ok: true,
+    user: {
+      id: user.id,
+      name: user.name,
+      email: user.email,
+      source: "backend"
+    }
+  });
+});
+
+app.post("/api/auth/login", (req, res) => {
+  const { email, password } = req.body || {};
+  if (!email || !password) {
+    return res.status(400).json({ error: "email and password are required" });
+  }
+
+  const store = readStore();
+  ensureUsers(store);
+  const normalizedEmail = normalizeEmail(email);
+  const user = store.users.find((item) => normalizeEmail(item.email) === normalizedEmail);
+
+  if (!user || String(user.password) !== String(password)) {
+    return res.status(401).json({ error: "invalid credentials" });
+  }
+
+  return res.json({
+    ok: true,
+    user: {
+      id: user.id,
+      name: user.name,
+      email: user.email,
+      source: "backend"
+    }
+  });
+});
+
+app.post("/api/challenge/complete", (req, res) => {
+  const { learnerName, score, total } = req.body || {};
+  if (!learnerName || typeof score !== "number" || typeof total !== "number") {
+    return res.status(400).json({ error: "learnerName, score and total are required" });
+  }
+
+  const store = readStore();
+  store.events.push({
+    type: "challenge-completed",
+    module: "storytelling",
+    timestamp: new Date().toISOString()
+  });
+
+  writeStore(store);
+
+  return res.json({
+    ok: true,
+    score,
+    total,
+    sponsorUrl: "https://github.com/sponsors/Tiggreee",
+    hasBookFile: false,
+    message: "Cuando el libro este disponible, se mostrara en sponsor."
+  });
 });
 
 app.post("/api/events", (req, res) => {

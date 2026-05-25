@@ -21,14 +21,57 @@
     <div class="bg-shape bg-shape-b" aria-hidden="true"></div>
 
     <header class="hero">
-      <p class="eyebrow">MVP - Data Analyst Track</p>
-      <h1>Ingles profesional para analisis de datos</h1>
+      <p class="eyebrow">Ruta Data + English</p>
+      <h1>Aprende ingles desde cero para analisis de datos, sin humo</h1>
       <p class="hero-copy">
-        Practica para hablar, escribir y presentar hallazgos con seguridad en
-        contexto real de datasets, SQL y dashboards.
+        Primero te registras, luego arrancas la ruta con objetivos cortos,
+        progreso claro y practica guiada para entrevistas, reportes y SQL.
       </p>
-      <a class="hero-cta" href="#/ruta-data-interactiva">Comenzar ruta</a>
+      <div class="hero-actions">
+        <button id="start-route-button" class="hero-cta" type="button">Iniciar ruta ahora</button>
+        <a class="hero-secondary" href="#challenge-mode">Ver challenge 10/10</a>
+      </div>
     </header>
+
+    <section class="onboarding" id="registro">
+      <div class="onboarding-copy">
+        <p class="eyebrow">Onboarding</p>
+        <h2>1 minuto para entrar, luego empiezas la ruta real</h2>
+        <p>
+          Crea cuenta con backend propio o entra con tus credenciales.
+          Google/Microsoft/GitHub quedan visibles para integracion OAuth.
+        </p>
+        <p id="auth-status" class="auth-status">Aun no has iniciado sesion.</p>
+      </div>
+
+      <div class="onboarding-forms">
+        <form id="register-form" class="auth-form">
+          <h3>Registro</h3>
+          <input id="register-name" type="text" placeholder="Nombre" required />
+          <input id="register-email" type="email" placeholder="Correo" required />
+          <input id="register-password" type="password" placeholder="Contrasena" minlength="4" required />
+          <button type="submit" class="hero-cta auth-btn">Crear cuenta</button>
+        </form>
+
+        <form id="login-form" class="auth-form">
+          <h3>Login</h3>
+          <input id="login-email" type="email" placeholder="Correo" required />
+          <input id="login-password" type="password" placeholder="Contrasena" minlength="4" required />
+          <button type="submit" class="hero-cta auth-btn">Entrar</button>
+        </form>
+      </div>
+
+      <div class="oauth-box">
+        <h3>Acceso social (OAuth)</h3>
+        <p>Disponible cuando conectemos credenciales oficiales.</p>
+        <div class="oauth-actions">
+          <button type="button" data-oauth="google" class="oauth-btn">Continuar con Google</button>
+          <button type="button" data-oauth="microsoft" class="oauth-btn">Continuar con Microsoft</button>
+          <button type="button" data-oauth="github" class="oauth-btn">Continuar con GitHub</button>
+        </div>
+        <p id="oauth-msg" class="oauth-msg" aria-live="polite"></p>
+      </div>
+    </section>
 
     <main class="layout">
       <aside class="sidebar" aria-label="Navegacion de contenido">
@@ -54,7 +97,7 @@
       </section>
     </main>
 
-    <section class="interactive" aria-label="Data route interactive">
+    <section class="interactive" aria-label="Data route interactive" id="challenge-mode">
       <div class="interactive-head">
         <p class="eyebrow">Laboratorio interactivo</p>
         <h2>Aprende ingles para Data Analyst en modo practico</h2>
@@ -87,8 +130,9 @@
       </div>
 
       <div class="quiz-panel" id="quiz-panel">
-        <h3>Challenge mode - English in action</h3>
-        <p id="quiz-level" class="quiz-level">Level 1 - Introductions in data context</p>
+        <h3>Challenge mode - 10 de 10</h3>
+        <p class="quiz-score">Progreso: <strong id="quiz-progress">0/10</strong></p>
+        <p id="quiz-level" class="quiz-level">Nivel 1</p>
         <p id="quiz-question" class="quiz-question">Loading question...</p>
         <p id="quiz-speak" class="quiz-speak">Speak prompt loading...</p>
 
@@ -97,6 +141,14 @@
         <div class="quiz-actions">
           <button id="quiz-next" class="quiz-next" type="button" disabled>Next</button>
           <p id="quiz-feedback" class="quiz-feedback" aria-live="polite"></p>
+        </div>
+
+        <div id="reward-box" class="reward-box" hidden>
+          <h4>10/10 desbloqueado</h4>
+          <p>Ganaste el acceso al siguiente paso de la ruta.</p>
+          <button id="sponsor-cta" class="hero-cta reward-btn" type="button">
+            Ya por favor quitame a este y sus peticiones absurdas de mi vista
+          </button>
         </div>
       </div>
     </section>
@@ -156,6 +208,22 @@
         </article>
       </div>
     </section>
+
+    <dialog id="reward-modal" class="reward-modal">
+      <div class="reward-modal-content">
+        <h3>Felicidades, completaste el challenge</h3>
+        <p>
+          Has ganado la oportunidad de acceder al material premium.
+          Te redirigimos en <strong id="reward-timer">5</strong> segundos.
+        </p>
+        <p class="book-note">
+          Libro del curso: cuando el archivo este disponible, lo recibiras desde la web de sponsor.
+        </p>
+        <a id="book-link" class="hero-secondary" href="https://github.com/sponsors/Tiggreee" target="_blank" rel="noreferrer">
+          Ver opcion de descarga / sponsor
+        </a>
+      </div>
+    </dialog>
 
     <script type="module" src="./app.js"></script>
   </body>
