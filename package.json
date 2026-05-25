@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:clean": "npx -y kill-port 8787 5173 5174 5175 && npm run dev",
     "dev:frontend": "vite",
     "dev:backend": "node server/index.js",
     "build": "vite build",
