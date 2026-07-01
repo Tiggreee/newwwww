@@ -19,6 +19,15 @@ Endpoints clave:
 - GET `/api/case-of-day`
 - POST `/api/events`
 
+OAuth endpoints:
+
+- GET `/api/auth/oauth/providers`
+- GET `/api/auth/oauth/google`
+- GET `/api/auth/oauth/github`
+- GET `/api/auth/oauth/microsoft`
+- GET `/api/auth/oauth/:provider/callback`
+- GET `/api/auth/oauth/complete?code=...`
+
 ## MVP Web listo para primer deploy
 
 Este repositorio incluye una version web navegable del curso.
@@ -59,6 +68,30 @@ npm run dev:backend
 Backend por defecto en:
 
 http://localhost:8787
+
+## Configurar OAuth oficial
+
+Sin variables de entorno, los botones OAuth mostraran estado no configurado.
+
+Variables soportadas:
+
+- `FRONTEND_URL` (default `http://localhost:5173`)
+- `BACKEND_URL` (default autodetectado por request)
+- `GOOGLE_CLIENT_ID`
+- `GOOGLE_CLIENT_SECRET`
+- `GITHUB_CLIENT_ID`
+- `GITHUB_CLIENT_SECRET`
+- `MS_CLIENT_ID`
+- `MS_CLIENT_SECRET`
+- `MS_TENANT_ID` (default `common`)
+
+Redirect URIs esperadas por proveedor (en local):
+
+- Google: `http://localhost:8787/api/auth/oauth/google/callback`
+- GitHub: `http://localhost:8787/api/auth/oauth/github/callback`
+- Microsoft: `http://localhost:8787/api/auth/oauth/microsoft/callback`
+
+Tip: en provider dashboards, registra exactamente esas callback URLs para evitar `redirect_uri_mismatch`.
 
 ## Build de verificacion
 
@@ -130,3 +163,4 @@ A2->B1 funcional: entiendes bastante pero te trabas al hablar. El curso prioriza
 - Repasa frases-clave.md una vez por semana.
 - Graba 2 min: "What this dataset tells us".
 - Practica una mini explicacion de grafica por dia.
+- small update
